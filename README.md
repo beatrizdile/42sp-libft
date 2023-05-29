@@ -2,9 +2,7 @@
 
 ## Libft Project
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-![Libft Logo](./images/libft-logo.png)
+![Libft Logo](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 
 The Libft project is one of the fundamental projects at the 42 School. The goal of this project is to create a library of essential C functions that participants can use throughout the Piscine and other projects.
 
