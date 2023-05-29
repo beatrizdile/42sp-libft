@@ -2,9 +2,30 @@
 
 ## Libft Project Description
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![Libft Logo](./images/libft-logo.png)
+
 The Libft project is one of the fundamental projects at the 42 School. The goal of this project is to create a library of essential C functions that participants can use throughout the Piscine and other projects.
 
 The Libft library includes a wide range of functions, including string manipulation, memory management, character handling, linked list operations, and more. Participants are required to implement these functions from scratch, without using any built-in C library functions.
+
+## Introduction
+
+Libft is a comprehensive C library that contains various custom implementations of standard library functions, as well as additional utility functions to aid in C programming. It serves as a fundamental building block for future projects and provides reusable code that can save time and effort.
+
+The library is designed to be easy to understand, portable, and lightweight, making it suitable for a wide range of projects. It adheres to the norminette coding standards, ensuring clean and consistent code.
+
+## Features
+
+| Category              | Description                                                                                                  |
+|-----------------------|--------------------------------------------------------------------------------------------------------------|
+| **Memory Functions**  | Functions for efficient memory manipulation and allocation, such as `memset`, `memcpy`, `memccpy`, and more.  |
+| **String Functions**  | String handling functions to manipulate and analyze strings, including `strlen`, `strcpy`, `strcat`, and more. |
+| **Conversion Functions** | Functions for converting data types, such as `atoi` (string to integer) and `itoa` (integer to string).      |
+| **Character Functions** | Functions to handle individual characters, like `isalpha`, `isdigit`, `toupper`, and more.                   |
+| **Linked List Functions** | Custom implementation of basic operations on linked lists, including creation, manipulation, and iteration.  |
+| **Output Functions**  | Functions to print output, including `putchar`, `putstr`, `putendl`, and `putnbr`.                            |
 
 By completing the Libft project, participants gain a deeper understanding of the inner workings of these fundamental functions and develop essential programming skills. They learn about pointer manipulation, memory allocation, and deallocation, as well as the proper use of structures and data types.
 
