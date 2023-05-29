@@ -3,7 +3,7 @@
  </h1>
 
 <h2 align=center>
-## Libft Project
+Libft Project
 
 ![Libft Logo](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 
