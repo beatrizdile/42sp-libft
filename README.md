@@ -1,9 +1,13 @@
-# 42 School
+<h1 align=center>
+  42 School
+ </h1>
 
+<h2 align=center>
 ## Libft Project
 
 ![Libft Logo](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 
+  </h2>
 The Libft project is one of the fundamental projects at the 42 School. The goal of this project is to create a library of essential C functions that participants can use throughout the Piscine and other projects.
 
 The Libft library includes a wide range of functions, including string manipulation, memory management, character handling, linked list operations, and more. Participants are required to implement these functions from scratch, without using any built-in C library functions.
