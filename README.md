@@ -1,8 +1,8 @@
 <h1 align=center>
-  42 School
+  42 Cursus
  </h1>
 <h2 align=center>
-  Libft
+  libft
 
   ![Libft Logo](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 
