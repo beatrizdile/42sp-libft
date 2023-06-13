@@ -11,7 +11,7 @@ The Libft project is one of the fundamental projects at the 42 School. The goal 
 
 The Libft library includes a wide range of functions, including string manipulation, memory management, character handling, linked list operations, and more. Participants are required to implement these functions from scratch, without using any built-in C library functions.
 
-## Introduction
+## Description
 
 Libft is a comprehensive C library that contains various custom implementations of standard library functions, as well as additional utility functions to aid in C programming. It serves as a fundamental building block for future projects and provides reusable code that can save time and effort.
 
