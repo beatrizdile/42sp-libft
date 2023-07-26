@@ -2,7 +2,10 @@
   42 Cursus
  </h1>
 <h2 align=center>
+  <h2 align=center>
   libft
+</h2>
+  
 
   ![Libft Logo](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 
