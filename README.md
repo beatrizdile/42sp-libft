@@ -6,16 +6,16 @@
 </h2>
 <h2 align=center>
 
-  ![Libft Logo](https://game.42sp.org.br/static/assets/achievements/libftm.png)
+  ![libft Logo](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 </h2>
 
-The Libft project is one of the fundamental projects at the 42 School. The goal of this project is to create a library of essential C functions that participants can use throughout the Piscine and other projects.
+The **libft** project is one of the fundamental projects at the 42 School. The goal of this project is to create a library of essential C functions that participants can use throughout the Piscine and other projects.
 
-The Libft library includes a wide range of functions, including string manipulation, memory management, character handling, linked list operations, and more. Participants are required to implement these functions from scratch, without using any built-in C library functions.
+The **libft** library includes a wide range of functions, including string manipulation, memory management, character handling, linked list operations, and more. Participants are required to implement these functions from scratch, without using any built-in C library functions.
 
 ## Description
 
-Libft is a comprehensive C library that contains various custom implementations of standard library functions, as well as additional utility functions to aid in C programming. It serves as a fundamental building block for future projects and provides reusable code that can save time and effort.
+**libft** is a comprehensive C library that contains various custom implementations of standard library functions, as well as additional utility functions to aid in C programming. It serves as a fundamental building block for future projects and provides reusable code that can save time and effort.
 
 The library is designed to be easy to understand, portable, and lightweight, making it suitable for a wide range of projects. It adheres to the norminette coding standards, ensuring clean and consistent code.
 
@@ -30,11 +30,10 @@ The library is designed to be easy to understand, portable, and lightweight, mak
 | **Linked List Functions** | Custom implementation of basic operations on linked lists, including creation, manipulation, and iteration.  |
 | **Output Functions**  | Functions to print output, including `putchar`, `putstr`, `putendl`, and `putnbr`.                            |
 
-By completing the Libft project, participants gain a deeper understanding of the inner workings of these fundamental functions and develop essential programming skills. They learn about pointer manipulation, memory allocation, and deallocation, as well as the proper use of structures and data types.
+By completing the **libft** project, participants gain a deeper understanding of the inner workings of these fundamental functions and develop essential programming skills. They learn about pointer manipulation, memory allocation, and deallocation, as well as the proper use of structures and data types.
 
-The Libft project serves as a building block for subsequent projects during the Piscine, as participants are encouraged to use their self-implemented library functions rather than relying on built-in functions. It also helps participants practice code organization, modular programming, and adhering to a consistent coding style.
+The **libft** project serves as a building block for subsequent projects during the Piscine, as participants are encouraged to use their self-implemented library functions rather than relying on built-in functions. It also helps participants practice code organization, modular programming, and adhering to a consistent coding style.
 
 Throughout the project, participants are expected to write clean, well-documented, and efficient code. They must adhere to the 42 School's specific coding standards, which emphasize readability, proper variable naming, and adherence to the project's requirements.
 
-Completing the Libft project is an important milestone in the 42 School curriculum, as it provides a solid foundation for further exploration of the C programming language and prepares participants for more advanced projects and challenges.
-
+Completing the **libft** project is an important milestone in the 42 School curriculum, as it provides a solid foundation for further exploration of the C programming language and prepares participants for more advanced projects and challenges.
