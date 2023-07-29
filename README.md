@@ -6,7 +6,7 @@
 </h2>
 <h2 align=center>
 
-  ![libft Logo](https://github.com/BeatrizdosSantosDile/42cursus-libft/assets/115947494/c1d49b6e-ee30-4481-ae71-f07631dd7f13)
+  ![libft Logo](https://github.com/GiovannaCoqueiro/42cursus-libft/assets/115947494/c1d49b6e-ee30-4481-ae71-f07631dd7f13)
 </h2>
 
 The **libft** project is one of the fundamental projects at the 42 School. The goal of this project is to create a library of essential C functions that participants can use throughout the Piscine and other projects.
