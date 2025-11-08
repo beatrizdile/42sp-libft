@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: bedos-sa <bedos-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/07/31 11:45:32 by cado-car          #+#    #+#              #
-#    Updated: 2023/05/16 15:23:20 by bedos-sa         ###   ########.fr        #
+#    Created: 2021/07/31 11:45:32 by bedos-sa          #+#    #+#              #
+#    Updated: 2025/11/08 17:56:19 by bedos-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,22 +28,30 @@ SRCS_BONUS	= ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 OBJS		= $(SRCS:.c=.o)
 OBJS_BONUS	= $(SRCS_BONUS:.c=.o)
 
-all: 		$(NAME)
+PRINT_NAME	= printf.a
+PRINTF_SRC	= printf_main.c printf_utils.c printf_outs.c
+PRINTF_OBJS	= $(PRINTF_SRC:.c=.o)
 
-$(NAME):	$(OBJS) $(INCS)
-			$(LIB)	$(NAME) $(OBJS)
+all:		$(NAME) clean
 
-bonus:		$(NAME) $(OBJS_BONUS)
-			$(LIB)	$(NAME) $(OBJS_BONUS)
+$(NAME):	$(OBJS) $(OBJS_BONUS) $(INCS)
+				$(MAKE) -C printf
+				cp printf/printf.a .
+				$(LIB)	$(NAME) $(OBJS) $(OBJS_BONUS)
+				ar -x printf.a
+				ar -r $(NAME) *.o
+				ranlib $(NAME)
 
 .c.o: 		
-			$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+		$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
 clean:
-	rm -f $(OBJS) $(OBJS_BONUS)
+	rm -f $(OBJS) $(OBJS_BONUS) $(PRINTF_OBJS)
+	$(MAKE) -C printf clean
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) $(PRINT_NAME)
+	$(MAKE) -C printf fclean
 
 re: fclean all
 
