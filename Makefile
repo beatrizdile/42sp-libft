@@ -6,7 +6,7 @@
 #    By: bedos-sa <bedos-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/31 11:45:32 by bedos-sa          #+#    #+#              #
-#    Updated: 2025/11/08 17:56:19 by bedos-sa         ###   ########.fr        #
+#    Updated: 2025/11/08 18:47:19 by bedos-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME		= libft.a
 CC			= cc
 CFLAGS		= -Wall -Wextra -Werror
 LIB			= ar -rcs
-INCS		= libft.h
+INCS		= libft.h get_next_line/get_next_line_bonus.h get_next_line/get_next_line.h
 SRCS		= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 			ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
@@ -28,29 +28,35 @@ SRCS_BONUS	= ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 OBJS		= $(SRCS:.c=.o)
 OBJS_BONUS	= $(SRCS_BONUS:.c=.o)
 
-PRINT_NAME	= printf.a
-PRINTF_SRC	= printf_main.c printf_utils.c printf_outs.c
-PRINTF_OBJS	= $(PRINTF_SRC:.c=.o)
+GET_NEXT_LINE_SRC 	= get_next_line/get_next_line_bonus.c get_next_line/get_next_line.c \
+			  		  get_next_line/get_next_line_utils_bonus.c get_next_line/get_next_line_utils.c
+GET_NEXT_LINE_OBJS 	= $(addprefix ,$(notdir $(GET_NEXT_LINE_SRC:.c=.o)))
+
+PRINTF_NAME			= printf.a
 
 all:		$(NAME) clean
 
 $(NAME):	$(OBJS) $(OBJS_BONUS) $(INCS)
 				$(MAKE) -C printf
-				cp printf/printf.a .
-				$(LIB)	$(NAME) $(OBJS) $(OBJS_BONUS)
-				ar -x printf.a
+				cp printf/$(PRINTF_NAME) .
+				$(LIB)	$(NAME) $(OBJS) $(OBJS_BONUS) $(GET_NEXT_LINE_OBJS)
+				ar -x $(PRINTF_NAME)
 				ar -r $(NAME) *.o
 				ranlib $(NAME)
+				rm -f $(PRINTF_NAME)
+
+%.o: get_next_line/%.c
+	$(CC) $(CFLAGS) -c $< -o $(notdir $@)
 
 .c.o: 		
 		$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
 clean:
-	rm -f $(OBJS) $(OBJS_BONUS) $(PRINTF_OBJS)
+	rm -f $(OBJS) $(OBJS_BONUS) $(GET_NEXT_LINE_OBJS)
 	$(MAKE) -C printf clean
 
 fclean: clean
-	rm -f $(NAME) $(PRINT_NAME)
+	rm -f $(NAME) $(PRINTF_NAME)
 	$(MAKE) -C printf fclean
 
 re: fclean all

@@ -6,7 +6,7 @@
 /*   By: bedos-sa <bedos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 11:12:03 by bedos-sa          #+#    #+#             */
-/*   Updated: 2023/05/16 14:53:42 by bedos-sa         ###   ########.fr       */
+/*   Updated: 2025/11/08 18:24:39 by bedos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include "printf/ft_printf.h"
+# include "get_next_line/get_next_line.h"
 
 typedef struct s_list
 {
